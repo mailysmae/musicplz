@@ -1,0 +1,23 @@
+/*color*/
+$c-bg: #FBD9D3;
+$c-text: #1D1D1B;
+$c-logo: #550000;
+$c-link: #FEFEFE; 
+$c-hover: #6a040c;
+$c-focus: #290104;
+$c-bulle: linear-gradient(90.8deg, #550F15 21.12%, #6F1C22 59.03%, #B02F38 99.39%);
+
+/*typo*/
+$size-text: 18px;
+$type-title: "Domine", serif;
+$type-text: "Cabin", sans-serif;
+$size-tablette: 25px;
+$size-desktop: 30px;
+$size-title: 50px;
+$type-logo: "Anilez", serif;
+
+@font-face {
+    font-family: "Anilez";
+    src: url("/fonts/Anilez.otf") format("otf2"),
+           url("/fonts/Anilez.otf") format("otf");
+}

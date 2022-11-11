@@ -1,0 +1,140 @@
+body {
+    font-family: $type-text;
+    font-size: $size-text;
+    line-height: 1.5;
+    color: $c-text;
+    background-color: $c-bg;
+  }
+/*section*/
+.section{
+    padding: 50px;
+    margin: auto;
+    max-width: 100%;
+}
+.section--header{
+    flex-direction: column;
+}
+.section--footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: auto;
+    border-top: 2px solid $c-logo;
+    top: 80px;
+    position: relative;
+}
+
+/*images*/
+img{
+    max-width: 100%;
+    padding: 20px;
+    position: relative;
+ 
+}
+.img--protect{
+    top: 50px;
+}
+.dwm{
+    width: 50px;
+}
+/*objet*/
+.ovale{
+    position: relative;
+    width: 100%;
+    border-radius: 0% 100% 63% 57% / 100% 51% 49% 0% ;
+    background: $c-bulle;
+    margin: -50px;
+    padding: 40px;
+    animation: color 3s infinite;
+} 
+
+/*points fort*/
+.box{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.page{
+    font-size: $size-text;
+    border-radius: 50px;
+    background-color: $c-logo;
+    width: 320px;
+    height: 300px;
+}
+
+
+  
+
+@media (min-width: 900px){ 
+    body {
+        font-size: $size-tablette;
+      }
+      .section--footer{
+          flex-direction: row;
+          padding: 20px;
+      }
+    .box{
+        width: 800px;
+        height: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        overflow-x: hidden;
+        padding: 30px;
+    }
+    
+    .page{
+        height: 396px;
+        margin: 10px;
+        font-size: $size-tablette;
+    }
+    .scroll{
+        position: absolute;
+        height: 5px;
+        width: 0;
+        background-color: pink;
+        top: 0;
+        left: 0;
+    }
+
+    .ovale{
+        height: 374px;
+        right: 186px;
+        padding: 120px;
+    } 
+
+}
+@media (min-width: 1200px){ 
+    .box{
+        width: 1000px;
+    }
+    .page{
+        height: 517px;
+        margin: 20px;
+        font-size: $size-desktop;
+        width: 640px;
+    }
+    .ovale{
+        height: 699px;
+        right: 254px;
+        padding: 0;
+        border-radius: 0% 100% 43% 27%/100% 71% 49% 0%;
+    }
+    .img--protect{
+        width: 500px;
+    }
+    .dwm{
+        top: 24px;
+    }
+}
+@media (min-width: 1500px){
+    .box{
+        width: 1500px;
+    }
+    .ovale {
+        height: 1000px;
+        right: 797px;
+        border-radius: 0% 100% 23% 67%/100% 71% 29% 0%;
+        width: 1910px;
+    }
+}

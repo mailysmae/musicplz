@@ -1,0 +1,106 @@
+/*lien*/
+a{
+    text-decoration: none;
+    color: $c-text;
+}
+/*bouton*/
+.proto{
+    cursor: pointer;
+    margin: 0;
+    border:transparent;
+    position: relative;
+    background-color: $c-logo;
+    font-family: $type-text;
+
+    color: $c-link;
+    padding: 15px;
+    border-radius: 25px;
+    top: 20px;
+}
+.proto:hover{
+    box-shadow: 2px 4px 10px $c-hover;
+}
+.proto:focus{
+    background-color: $c-focus;
+}
+/*reseaux*/
+.reseau,
+.menu__list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.menu__el{
+    margin: 10px;
+}
+.reseau__el a{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 20px;
+    
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-image: url(../assets/images/reseaux/insta.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+.reseau__el--insta a:hover{
+    background-image: url(../assets/images/reseaux/instahover.svg);
+}
+.reseau__el--insta a:focus{
+    background-image: url(../assets/images/reseaux/insta.svg);
+}
+.reseau__el--pinterest a{
+    background-image: url(../assets/images/reseaux/pinterest.svg);
+}
+.reseau__el--pinterest a:hover{
+    background-image: url(../assets/images/reseaux/pinteresthover.svg);
+}
+.reseau__el--pinterest a:focus{
+    background-image: url(../assets/images/reseaux/pinterest.svg);
+}
+.reseau__el--mail a{
+    background-image: url(../assets/images/reseaux/mail.svg);
+}
+.reseau__el--mail a:hover{
+    background-image: url(../assets/images/reseaux/mailhover.svg);
+}
+.reseau__el--mail a:focus{
+    background-image: url(../assets/images/reseaux/mail.svg);
+}
+.reseau__el--behance a{
+    background-image: url(../assets/images/reseaux/behance.svg);
+}
+.reseau__el--behance a:hover{
+    background-image: url(../assets/images/reseaux/behancehover.svg);
+}
+.reseau__el--behance a:focus{
+    background-image: url(../assets/images/reseaux/behance.svg);
+}
+
+@media (min-width: 900px){ 
+    .proto{
+        top: -110px;
+    }
+    .reseau__el a{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (min-width: 1200px){ 
+    .proto{
+        padding: 34px;
+        border-radius: 45px;
+        top: -216px;
+        font-size: $size-desktop;
+    }
+    .reseau__el{
+        top: -14px;
+        position: relative;
+    }
+}

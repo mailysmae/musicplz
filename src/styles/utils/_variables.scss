@@ -1,23 +1,11 @@
 /*color*/
-$c-bg: #FBD9D3;
-$c-text: #1D1D1B;
-$c-logo: #550000;
-$c-link: #FEFEFE; 
-$c-hover: #6a040c;
-$c-focus: #290104;
-$c-bulle: linear-gradient(90.8deg, #550F15 21.12%, #6F1C22 59.03%, #B02F38 99.39%);
+$c-bg: linear-gradient(180deg, rgba(94, 96, 90, 0.9) 0%, rgba(94, 96, 90, 0) 100%);
+$c-text: #FFDCA5;
 
 /*typo*/
+$type-title: 'Courier Prime', monospace;
+$type-text: 'Changa', sans-serif;
 $size-text: 18px;
-$type-title: "Domine", serif;
-$type-text: "Cabin", sans-serif;
 $size-tablette: 25px;
 $size-desktop: 30px;
 $size-title: 50px;
-$type-logo: "Anilez", serif;
-
-@font-face {
-    font-family: "Anilez";
-    src: url("/fonts/Anilez.otf") format("otf2"),
-           url("/fonts/Anilez.otf") format("otf");
-}

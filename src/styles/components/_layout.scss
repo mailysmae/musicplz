@@ -27,43 +27,16 @@ body {
 /*images*/
 img{
     max-width: 100%;
-    padding: 20px;
     position: relative;
  
 }
-.img--protect{
-    top: 50px;
-}
+
 .dwm{
     width: 50px;
 }
-/*objet*/
-.ovale{
-    position: relative;
-    width: 100%;
-    border-radius: 0% 100% 63% 57% / 100% 51% 49% 0% ;
-    background: $c-bulle;
-    margin: -50px;
-    padding: 40px;
-    animation: color 3s infinite;
-} 
-
-/*points fort*/
-.box{
-    position: relative;
-    margin: 0;
-    padding: 0;
-}
-.page{
-    font-size: $size-text;
-    border-radius: 50px;
-    background-color: $c-logo;
-    width: 320px;
-    height: 300px;
-}
 
 
-  
+
 
 @media (min-width: 900px){ 
     body {
@@ -97,11 +70,6 @@ img{
         left: 0;
     }
 
-    .ovale{
-        height: 374px;
-        right: 186px;
-        padding: 120px;
-    } 
 
 }
 @media (min-width: 1200px){ 
@@ -114,15 +82,6 @@ img{
         font-size: $size-desktop;
         width: 640px;
     }
-    .ovale{
-        height: 699px;
-        right: 254px;
-        padding: 0;
-        border-radius: 0% 100% 43% 27%/100% 71% 49% 0%;
-    }
-    .img--protect{
-        width: 500px;
-    }
     .dwm{
         top: 24px;
     }
@@ -131,10 +90,5 @@ img{
     .box{
         width: 1500px;
     }
-    .ovale {
-        height: 1000px;
-        right: 797px;
-        border-radius: 0% 100% 23% 67%/100% 71% 29% 0%;
-        width: 1910px;
-    }
+    
 }
